@@ -92,9 +92,9 @@ Partial Class Form2
         Me.label3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.label3.Location = New System.Drawing.Point(224, 354)
         Me.label3.Name = "label3"
-        Me.label3.Size = New System.Drawing.Size(155, 17)
+        Me.label3.Size = New System.Drawing.Size(160, 17)
         Me.label3.TabIndex = 19
-        Me.label3.Text = "Busqueda de Usuarios"
+        Me.label3.Text = "Busqueda de Pacientes"
         '
         'label2
         '
