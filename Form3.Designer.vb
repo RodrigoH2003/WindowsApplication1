@@ -55,7 +55,12 @@ Partial Class Form3
         Me.ApellidoTextBox = New System.Windows.Forms.TextBox()
         Me.UsuarioTextBox = New System.Windows.Forms.TextBox()
         Me.PasswordTextBox = New System.Windows.Forms.TextBox()
-        Me.NivelTextBox = New System.Windows.Forms.TextBox()
+        Me.NivelComboBox = New System.Windows.Forms.ComboBox()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label22 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label24 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         NombreLabel = New System.Windows.Forms.Label()
         ApellidoLabel = New System.Windows.Forms.Label()
         UsuarioLabel = New System.Windows.Forms.Label()
@@ -71,6 +76,7 @@ Partial Class Form3
         NombreLabel.AutoSize = True
         NombreLabel.BackColor = System.Drawing.Color.Transparent
         NombreLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NombreLabel.ForeColor = System.Drawing.SystemColors.ControlText
         NombreLabel.Location = New System.Drawing.Point(35, 248)
         NombreLabel.Name = "NombreLabel"
         NombreLabel.Size = New System.Drawing.Size(66, 17)
@@ -82,6 +88,7 @@ Partial Class Form3
         ApellidoLabel.AutoSize = True
         ApellidoLabel.BackColor = System.Drawing.Color.Transparent
         ApellidoLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        ApellidoLabel.ForeColor = System.Drawing.SystemColors.ControlText
         ApellidoLabel.Location = New System.Drawing.Point(36, 280)
         ApellidoLabel.Name = "ApellidoLabel"
         ApellidoLabel.Size = New System.Drawing.Size(68, 17)
@@ -93,6 +100,7 @@ Partial Class Form3
         UsuarioLabel.AutoSize = True
         UsuarioLabel.BackColor = System.Drawing.Color.Transparent
         UsuarioLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        UsuarioLabel.ForeColor = System.Drawing.SystemColors.ControlText
         UsuarioLabel.Location = New System.Drawing.Point(34, 308)
         UsuarioLabel.Name = "UsuarioLabel"
         UsuarioLabel.Size = New System.Drawing.Size(64, 17)
@@ -104,6 +112,7 @@ Partial Class Form3
         PasswordLabel.AutoSize = True
         PasswordLabel.BackColor = System.Drawing.Color.Transparent
         PasswordLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        PasswordLabel.ForeColor = System.Drawing.SystemColors.ControlText
         PasswordLabel.Location = New System.Drawing.Point(35, 334)
         PasswordLabel.Name = "PasswordLabel"
         PasswordLabel.Size = New System.Drawing.Size(75, 17)
@@ -115,6 +124,7 @@ Partial Class Form3
         NivelLabel.AutoSize = True
         NivelLabel.BackColor = System.Drawing.Color.Transparent
         NivelLabel.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        NivelLabel.ForeColor = System.Drawing.SystemColors.ControlText
         NivelLabel.Location = New System.Drawing.Point(36, 393)
         NivelLabel.Name = "NivelLabel"
         NivelLabel.Size = New System.Drawing.Size(48, 17)
@@ -170,7 +180,7 @@ Partial Class Form3
         Me.label8.AutoSize = True
         Me.label8.BackColor = System.Drawing.Color.Transparent
         Me.label8.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label8.Location = New System.Drawing.Point(517, 324)
+        Me.label8.Location = New System.Drawing.Point(517, 375)
         Me.label8.Name = "label8"
         Me.label8.Size = New System.Drawing.Size(55, 15)
         Me.label8.TabIndex = 43
@@ -181,7 +191,7 @@ Partial Class Form3
         Me.label7.AutoSize = True
         Me.label7.BackColor = System.Drawing.Color.Transparent
         Me.label7.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label7.Location = New System.Drawing.Point(522, 219)
+        Me.label7.Location = New System.Drawing.Point(522, 270)
         Me.label7.Name = "label7"
         Me.label7.Size = New System.Drawing.Size(40, 15)
         Me.label7.TabIndex = 42
@@ -192,7 +202,7 @@ Partial Class Form3
         Me.label6.AutoSize = True
         Me.label6.BackColor = System.Drawing.Color.Transparent
         Me.label6.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label6.Location = New System.Drawing.Point(517, 108)
+        Me.label6.Location = New System.Drawing.Point(517, 159)
         Me.label6.Name = "label6"
         Me.label6.Size = New System.Drawing.Size(40, 15)
         Me.label6.TabIndex = 41
@@ -212,6 +222,7 @@ Partial Class Form3
         Me.label5.AutoSize = True
         Me.label5.BackColor = System.Drawing.Color.Transparent
         Me.label5.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.label5.ForeColor = System.Drawing.SystemColors.ControlText
         Me.label5.Location = New System.Drawing.Point(35, 360)
         Me.label5.Name = "label5"
         Me.label5.Size = New System.Drawing.Size(158, 17)
@@ -223,7 +234,8 @@ Partial Class Form3
         Me.label1.AutoSize = True
         Me.label1.BackColor = System.Drawing.Color.Transparent
         Me.label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label1.Location = New System.Drawing.Point(272, 9)
+        Me.label1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.label1.Location = New System.Drawing.Point(293, 52)
         Me.label1.Name = "label1"
         Me.label1.Size = New System.Drawing.Size(239, 29)
         Me.label1.TabIndex = 24
@@ -285,7 +297,7 @@ Partial Class Form3
         '
         Me.button3.BackColor = System.Drawing.SystemColors.Window
         Me.button3.Image = Global.WindowsApplication1.My.Resources.Resources.eliminar_amigo
-        Me.button3.Location = New System.Drawing.Point(441, 296)
+        Me.button3.Location = New System.Drawing.Point(441, 347)
         Me.button3.Name = "button3"
         Me.button3.Size = New System.Drawing.Size(70, 73)
         Me.button3.TabIndex = 28
@@ -295,7 +307,7 @@ Partial Class Form3
         '
         Me.button2.BackColor = System.Drawing.SystemColors.Window
         Me.button2.Image = Global.WindowsApplication1.My.Resources.Resources.usuario
-        Me.button2.Location = New System.Drawing.Point(441, 191)
+        Me.button2.Location = New System.Drawing.Point(441, 242)
         Me.button2.Name = "button2"
         Me.button2.Size = New System.Drawing.Size(70, 70)
         Me.button2.TabIndex = 27
@@ -305,7 +317,7 @@ Partial Class Form3
         '
         Me.button1.BackColor = System.Drawing.SystemColors.Window
         Me.button1.Image = Global.WindowsApplication1.My.Resources.Resources.nuevo_usuario
-        Me.button1.Location = New System.Drawing.Point(441, 80)
+        Me.button1.Location = New System.Drawing.Point(441, 131)
         Me.button1.Name = "button1"
         Me.button1.Size = New System.Drawing.Size(70, 71)
         Me.button1.TabIndex = 26
@@ -380,14 +392,66 @@ Partial Class Form3
         Me.PasswordTextBox.Size = New System.Drawing.Size(203, 20)
         Me.PasswordTextBox.TabIndex = 55
         '
-        'NivelTextBox
+        'NivelComboBox
         '
-        Me.NivelTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.UsuariosBindingSource, "Nivel", True))
-        Me.NivelTextBox.Enabled = False
-        Me.NivelTextBox.Location = New System.Drawing.Point(199, 393)
-        Me.NivelTextBox.Name = "NivelTextBox"
-        Me.NivelTextBox.Size = New System.Drawing.Size(203, 20)
-        Me.NivelTextBox.TabIndex = 56
+        Me.NivelComboBox.Enabled = False
+        Me.NivelComboBox.FormattingEnabled = True
+        Me.NivelComboBox.Items.AddRange(New Object() {"Alto", "Bajo"})
+        Me.NivelComboBox.Location = New System.Drawing.Point(199, 393)
+        Me.NivelComboBox.Name = "NivelComboBox"
+        Me.NivelComboBox.Size = New System.Drawing.Size(203, 21)
+        Me.NivelComboBox.TabIndex = 57
+        '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.BackColor = System.Drawing.Color.Transparent
+        Me.Label21.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label21.Location = New System.Drawing.Point(472, 14)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(48, 15)
+        Me.Label21.TabIndex = 99
+        Me.Label21.Text = "Label21"
+        '
+        'Label22
+        '
+        Me.Label22.AutoSize = True
+        Me.Label22.BackColor = System.Drawing.Color.Transparent
+        Me.Label22.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label22.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label22.Location = New System.Drawing.Point(323, 14)
+        Me.Label22.Name = "Label22"
+        Me.Label22.Size = New System.Drawing.Size(48, 15)
+        Me.Label22.TabIndex = 98
+        Me.Label22.Text = "Label22"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.BackColor = System.Drawing.Color.Transparent
+        Me.Label23.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label23.Location = New System.Drawing.Point(279, 14)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(48, 15)
+        Me.Label23.TabIndex = 97
+        Me.Label23.Text = "HORA:"
+        '
+        'Label24
+        '
+        Me.Label24.AutoSize = True
+        Me.Label24.BackColor = System.Drawing.Color.Transparent
+        Me.Label24.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label24.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label24.Location = New System.Drawing.Point(425, 14)
+        Me.Label24.Name = "Label24"
+        Me.Label24.Size = New System.Drawing.Size(52, 15)
+        Me.Label24.TabIndex = 96
+        Me.Label24.Text = "FECHA:"
+        '
+        'Timer1
+        '
         '
         'Form3
         '
@@ -395,8 +459,12 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources._56934
         Me.ClientSize = New System.Drawing.Size(592, 552)
+        Me.Controls.Add(Me.Label21)
+        Me.Controls.Add(Me.Label22)
+        Me.Controls.Add(Me.Label23)
+        Me.Controls.Add(Me.Label24)
+        Me.Controls.Add(Me.NivelComboBox)
         Me.Controls.Add(NivelLabel)
-        Me.Controls.Add(Me.NivelTextBox)
         Me.Controls.Add(PasswordLabel)
         Me.Controls.Add(Me.PasswordTextBox)
         Me.Controls.Add(UsuarioLabel)
@@ -425,6 +493,7 @@ Partial Class Form3
         Me.Controls.Add(Me.pictureBox1)
         Me.Controls.Add(Me.label1)
         Me.Name = "Form3"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DATOS USUARIOS"
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VeterinariaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -460,5 +529,10 @@ Partial Class Form3
     Friend WithEvents ApellidoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents UsuarioTextBox As System.Windows.Forms.TextBox
     Friend WithEvents PasswordTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents NivelTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents NivelComboBox As System.Windows.Forms.ComboBox
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Label22 As System.Windows.Forms.Label
+    Private WithEvents Label23 As System.Windows.Forms.Label
+    Private WithEvents Label24 As System.Windows.Forms.Label
+    Friend WithEvents Timer1 As System.Windows.Forms.Timer
 End Class

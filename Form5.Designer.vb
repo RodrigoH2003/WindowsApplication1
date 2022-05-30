@@ -60,19 +60,6 @@ Partial Class Form5
         Me.VeterinariaDataSet1 = New WindowsApplication1.VeterinariaDataSet1()
         Me.CreacionTableAdapter1 = New WindowsApplication1.VeterinariaDataSet1TableAdapters.CreacionTableAdapter()
         Me.TableAdapterManager1 = New WindowsApplication1.VeterinariaDataSet1TableAdapters.TableAdapterManager()
-        Me.CreacionDataGridView = New System.Windows.Forms.DataGridView()
-        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CreacionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.VeterinariaDataSet = New WindowsApplication1.VeterinariaDataSet()
         Me.combotipo = New System.Windows.Forms.ComboBox()
@@ -92,14 +79,40 @@ Partial Class Form5
         Me.TableAdapterManager = New WindowsApplication1.VeterinariaDataSetTableAdapters.TableAdapterManager()
         Me.UsuariosTableAdapter = New WindowsApplication1.VeterinariaDataSetTableAdapters.usuariosTableAdapter()
         Me.UsuariosBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Button8 = New System.Windows.Forms.Button()
+        Me.FechaDateTimePicker = New System.Windows.Forms.DateTimePicker()
+        Me.TotalTextBox = New System.Windows.Forms.TextBox()
+        Me.RecetaTextBox = New System.Windows.Forms.TextBox()
+        Me.AsuntoTextBox = New System.Windows.Forms.TextBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.CreacionDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Asunto = New System.Windows.Forms.GroupBox()
         IdLabel = New System.Windows.Forms.Label()
         CType(Me.CreacionBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VeterinariaDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.CreacionDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CreacionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VeterinariaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UsuariosBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CreacionDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Asunto.SuspendLayout()
         Me.SuspendLayout()
         '
         'IdLabel
@@ -108,7 +121,7 @@ Partial Class Form5
         IdLabel.BackColor = System.Drawing.Color.Transparent
         IdLabel.Enabled = False
         IdLabel.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        IdLabel.Location = New System.Drawing.Point(775, 249)
+        IdLabel.Location = New System.Drawing.Point(498, 250)
         IdLabel.Name = "IdLabel"
         IdLabel.Size = New System.Drawing.Size(21, 15)
         IdLabel.TabIndex = 86
@@ -119,7 +132,7 @@ Partial Class Form5
         Me.label19.AutoSize = True
         Me.label19.BackColor = System.Drawing.Color.Transparent
         Me.label19.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label19.Location = New System.Drawing.Point(626, 661)
+        Me.label19.Location = New System.Drawing.Point(626, 641)
         Me.label19.Name = "label19"
         Me.label19.Size = New System.Drawing.Size(55, 15)
         Me.label19.TabIndex = 75
@@ -130,7 +143,7 @@ Partial Class Form5
         Me.label18.AutoSize = True
         Me.label18.BackColor = System.Drawing.Color.Transparent
         Me.label18.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label18.Location = New System.Drawing.Point(732, 661)
+        Me.label18.Location = New System.Drawing.Point(739, 642)
         Me.label18.Name = "label18"
         Me.label18.Size = New System.Drawing.Size(57, 15)
         Me.label18.TabIndex = 74
@@ -141,7 +154,7 @@ Partial Class Form5
         Me.label17.AutoSize = True
         Me.label17.BackColor = System.Drawing.Color.Transparent
         Me.label17.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label17.Location = New System.Drawing.Point(854, 661)
+        Me.label17.Location = New System.Drawing.Point(858, 642)
         Me.label17.Name = "label17"
         Me.label17.Size = New System.Drawing.Size(35, 15)
         Me.label17.TabIndex = 73
@@ -152,7 +165,7 @@ Partial Class Form5
         Me.label16.AutoSize = True
         Me.label16.BackColor = System.Drawing.Color.Transparent
         Me.label16.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label16.Location = New System.Drawing.Point(512, 665)
+        Me.label16.Location = New System.Drawing.Point(512, 641)
         Me.label16.Name = "label16"
         Me.label16.Size = New System.Drawing.Size(53, 15)
         Me.label16.TabIndex = 72
@@ -163,7 +176,7 @@ Partial Class Form5
         Me.label15.AutoSize = True
         Me.label15.BackColor = System.Drawing.Color.Transparent
         Me.label15.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label15.Location = New System.Drawing.Point(407, 656)
+        Me.label15.Location = New System.Drawing.Point(407, 636)
         Me.label15.Name = "label15"
         Me.label15.Size = New System.Drawing.Size(40, 15)
         Me.label15.TabIndex = 71
@@ -174,7 +187,7 @@ Partial Class Form5
         Me.label14.AutoSize = True
         Me.label14.BackColor = System.Drawing.Color.Transparent
         Me.label14.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label14.Location = New System.Drawing.Point(304, 657)
+        Me.label14.Location = New System.Drawing.Point(304, 637)
         Me.label14.Name = "label14"
         Me.label14.Size = New System.Drawing.Size(40, 15)
         Me.label14.TabIndex = 70
@@ -185,7 +198,7 @@ Partial Class Form5
         Me.label13.AutoSize = True
         Me.label13.BackColor = System.Drawing.Color.Transparent
         Me.label13.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label13.Location = New System.Drawing.Point(160, 657)
+        Me.label13.Location = New System.Drawing.Point(160, 637)
         Me.label13.Name = "label13"
         Me.label13.Size = New System.Drawing.Size(97, 15)
         Me.label13.TabIndex = 69
@@ -196,7 +209,7 @@ Partial Class Form5
         Me.label12.AutoSize = True
         Me.label12.BackColor = System.Drawing.Color.Transparent
         Me.label12.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label12.Location = New System.Drawing.Point(775, 189)
+        Me.label12.Location = New System.Drawing.Point(498, 190)
         Me.label12.Name = "label12"
         Me.label12.Size = New System.Drawing.Size(145, 17)
         Me.label12.TabIndex = 49
@@ -207,7 +220,7 @@ Partial Class Form5
         Me.label11.AutoSize = True
         Me.label11.BackColor = System.Drawing.Color.Transparent
         Me.label11.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label11.Location = New System.Drawing.Point(775, 150)
+        Me.label11.Location = New System.Drawing.Point(498, 151)
         Me.label11.Name = "label11"
         Me.label11.Size = New System.Drawing.Size(45, 17)
         Me.label11.TabIndex = 48
@@ -218,7 +231,7 @@ Partial Class Form5
         Me.label10.AutoSize = True
         Me.label10.BackColor = System.Drawing.Color.Transparent
         Me.label10.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label10.Location = New System.Drawing.Point(775, 104)
+        Me.label10.Location = New System.Drawing.Point(498, 105)
         Me.label10.Name = "label10"
         Me.label10.Size = New System.Drawing.Size(63, 17)
         Me.label10.TabIndex = 47
@@ -229,7 +242,7 @@ Partial Class Form5
         Me.label9.AutoSize = True
         Me.label9.BackColor = System.Drawing.Color.Transparent
         Me.label9.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label9.Location = New System.Drawing.Point(775, 62)
+        Me.label9.Location = New System.Drawing.Point(498, 63)
         Me.label9.Name = "label9"
         Me.label9.Size = New System.Drawing.Size(63, 17)
         Me.label9.TabIndex = 46
@@ -240,7 +253,7 @@ Partial Class Form5
         Me.label8.AutoSize = True
         Me.label8.BackColor = System.Drawing.Color.Transparent
         Me.label8.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label8.Location = New System.Drawing.Point(289, 299)
+        Me.label8.Location = New System.Drawing.Point(12, 300)
         Me.label8.Name = "label8"
         Me.label8.Size = New System.Drawing.Size(77, 17)
         Me.label8.TabIndex = 45
@@ -251,7 +264,7 @@ Partial Class Form5
         Me.label7.AutoSize = True
         Me.label7.BackColor = System.Drawing.Color.Transparent
         Me.label7.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label7.Location = New System.Drawing.Point(291, 262)
+        Me.label7.Location = New System.Drawing.Point(14, 263)
         Me.label7.Name = "label7"
         Me.label7.Size = New System.Drawing.Size(77, 17)
         Me.label7.TabIndex = 44
@@ -262,7 +275,7 @@ Partial Class Form5
         Me.label6.AutoSize = True
         Me.label6.BackColor = System.Drawing.Color.Transparent
         Me.label6.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label6.Location = New System.Drawing.Point(291, 226)
+        Me.label6.Location = New System.Drawing.Point(14, 227)
         Me.label6.Name = "label6"
         Me.label6.Size = New System.Drawing.Size(57, 17)
         Me.label6.TabIndex = 43
@@ -273,7 +286,7 @@ Partial Class Form5
         Me.label5.AutoSize = True
         Me.label5.BackColor = System.Drawing.Color.Transparent
         Me.label5.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label5.Location = New System.Drawing.Point(289, 190)
+        Me.label5.Location = New System.Drawing.Point(12, 191)
         Me.label5.Name = "label5"
         Me.label5.Size = New System.Drawing.Size(112, 17)
         Me.label5.TabIndex = 42
@@ -284,7 +297,7 @@ Partial Class Form5
         Me.label4.AutoSize = True
         Me.label4.BackColor = System.Drawing.Color.Transparent
         Me.label4.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label4.Location = New System.Drawing.Point(291, 150)
+        Me.label4.Location = New System.Drawing.Point(14, 151)
         Me.label4.Name = "label4"
         Me.label4.Size = New System.Drawing.Size(107, 17)
         Me.label4.TabIndex = 41
@@ -295,7 +308,7 @@ Partial Class Form5
         Me.label3.AutoSize = True
         Me.label3.BackColor = System.Drawing.Color.Transparent
         Me.label3.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label3.Location = New System.Drawing.Point(291, 104)
+        Me.label3.Location = New System.Drawing.Point(14, 105)
         Me.label3.Name = "label3"
         Me.label3.Size = New System.Drawing.Size(156, 17)
         Me.label3.TabIndex = 40
@@ -306,7 +319,7 @@ Partial Class Form5
         Me.label2.AutoSize = True
         Me.label2.BackColor = System.Drawing.Color.Transparent
         Me.label2.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label2.Location = New System.Drawing.Point(289, 62)
+        Me.label2.Location = New System.Drawing.Point(12, 63)
         Me.label2.Name = "label2"
         Me.label2.Size = New System.Drawing.Size(158, 17)
         Me.label2.TabIndex = 39
@@ -327,7 +340,7 @@ Partial Class Form5
         '
         Me.button7.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.button7.Image = Global.WindowsApplication1.My.Resources.Resources.eliminar_amigo
-        Me.button7.Location = New System.Drawing.Point(613, 585)
+        Me.button7.Location = New System.Drawing.Point(613, 565)
         Me.button7.Name = "button7"
         Me.button7.Size = New System.Drawing.Size(74, 73)
         Me.button7.TabIndex = 68
@@ -338,7 +351,7 @@ Partial Class Form5
         Me.button6.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.button6.Enabled = False
         Me.button6.Image = Global.WindowsApplication1.My.Resources.Resources.cancelar
-        Me.button6.Location = New System.Drawing.Point(726, 585)
+        Me.button6.Location = New System.Drawing.Point(726, 565)
         Me.button6.Name = "button6"
         Me.button6.Size = New System.Drawing.Size(72, 73)
         Me.button6.TabIndex = 67
@@ -348,7 +361,7 @@ Partial Class Form5
         '
         Me.button5.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.button5.Image = Global.WindowsApplication1.My.Resources.Resources.cerrar_sesion
-        Me.button5.Location = New System.Drawing.Point(835, 585)
+        Me.button5.Location = New System.Drawing.Point(835, 565)
         Me.button5.Name = "button5"
         Me.button5.Size = New System.Drawing.Size(74, 74)
         Me.button5.TabIndex = 66
@@ -359,7 +372,7 @@ Partial Class Form5
         Me.button4.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.button4.Enabled = False
         Me.button4.Image = Global.WindowsApplication1.My.Resources.Resources.guardar_el_archivo
-        Me.button4.Location = New System.Drawing.Point(502, 580)
+        Me.button4.Location = New System.Drawing.Point(502, 560)
         Me.button4.Name = "button4"
         Me.button4.Size = New System.Drawing.Size(70, 82)
         Me.button4.TabIndex = 65
@@ -369,7 +382,7 @@ Partial Class Form5
         '
         Me.button3.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.button3.Image = Global.WindowsApplication1.My.Resources.Resources.editar
-        Me.button3.Location = New System.Drawing.Point(397, 581)
+        Me.button3.Location = New System.Drawing.Point(397, 561)
         Me.button3.Name = "button3"
         Me.button3.Size = New System.Drawing.Size(64, 72)
         Me.button3.TabIndex = 64
@@ -379,7 +392,7 @@ Partial Class Form5
         '
         Me.button2.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.button2.Image = Global.WindowsApplication1.My.Resources.Resources.paciente
-        Me.button2.Location = New System.Drawing.Point(292, 582)
+        Me.button2.Location = New System.Drawing.Point(292, 562)
         Me.button2.Name = "button2"
         Me.button2.Size = New System.Drawing.Size(64, 72)
         Me.button2.TabIndex = 63
@@ -389,7 +402,7 @@ Partial Class Form5
         '
         Me.button1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.button1.Image = Global.WindowsApplication1.My.Resources.Resources.buscar1
-        Me.button1.Location = New System.Drawing.Point(172, 581)
+        Me.button1.Location = New System.Drawing.Point(172, 561)
         Me.button1.Name = "button1"
         Me.button1.Size = New System.Drawing.Size(80, 73)
         Me.button1.TabIndex = 62
@@ -399,10 +412,10 @@ Partial Class Form5
         '
         Me.Label20.AutoSize = True
         Me.Label20.BackColor = System.Drawing.Color.Transparent
-        Me.Label20.Font = New System.Drawing.Font("Times New Roman", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(777, 222)
+        Me.Label20.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label20.Location = New System.Drawing.Point(500, 223)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(61, 15)
+        Me.Label20.Size = New System.Drawing.Size(73, 17)
         Me.Label20.TabIndex = 77
         Me.Label20.Text = "Otra Raza"
         '
@@ -473,16 +486,251 @@ Partial Class Form5
         Me.TableAdapterManager1.CreacionTableAdapter = Me.CreacionTableAdapter1
         Me.TableAdapterManager1.UpdateOrder = WindowsApplication1.VeterinariaDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
+        'CreacionBindingSource
+        '
+        Me.CreacionBindingSource.DataMember = "Creacion"
+        Me.CreacionBindingSource.DataSource = Me.VeterinariaDataSet
+        '
+        'VeterinariaDataSet
+        '
+        Me.VeterinariaDataSet.DataSetName = "VeterinariaDataSet"
+        Me.VeterinariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'combotipo
+        '
+        Me.combotipo.Enabled = False
+        Me.combotipo.FormattingEnabled = True
+        Me.combotipo.Items.AddRange(New Object() {"Gato", "Perro", "Conejo", "Tortuga", "Rata o Raton", "Caballo", "Gallina", "Gallo", "Cerdo", "Erizo", "Pájaro"})
+        Me.combotipo.Location = New System.Drawing.Point(188, 151)
+        Me.combotipo.Name = "combotipo"
+        Me.combotipo.Size = New System.Drawing.Size(139, 21)
+        Me.combotipo.TabIndex = 58
+        '
+        'comboraza
+        '
+        Me.comboraza.Enabled = False
+        Me.comboraza.FormattingEnabled = True
+        Me.comboraza.Location = New System.Drawing.Point(188, 187)
+        Me.comboraza.Name = "comboraza"
+        Me.comboraza.Size = New System.Drawing.Size(139, 21)
+        Me.comboraza.TabIndex = 59
+        '
+        'comboBox3
+        '
+        Me.comboBox3.Enabled = False
+        Me.comboBox3.FormattingEnabled = True
+        Me.comboBox3.Items.AddRange(New Object() {"Macho", "Hembra"})
+        Me.comboBox3.Location = New System.Drawing.Point(188, 223)
+        Me.comboBox3.Name = "comboBox3"
+        Me.comboBox3.Size = New System.Drawing.Size(139, 21)
+        Me.comboBox3.TabIndex = 60
+        '
+        'NombreEncargadoTextBox
+        '
+        Me.NombreEncargadoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "NombreEncargado", True))
+        Me.NombreEncargadoTextBox.Enabled = False
+        Me.NombreEncargadoTextBox.Location = New System.Drawing.Point(188, 60)
+        Me.NombreEncargadoTextBox.Name = "NombreEncargadoTextBox"
+        Me.NombreEncargadoTextBox.Size = New System.Drawing.Size(139, 20)
+        Me.NombreEncargadoTextBox.TabIndex = 93
+        '
+        'ApellidoETextBox
+        '
+        Me.ApellidoETextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "ApellidoE", True))
+        Me.ApellidoETextBox.Enabled = False
+        Me.ApellidoETextBox.Location = New System.Drawing.Point(352, 60)
+        Me.ApellidoETextBox.Name = "ApellidoETextBox"
+        Me.ApellidoETextBox.Size = New System.Drawing.Size(140, 20)
+        Me.ApellidoETextBox.TabIndex = 94
+        '
+        'NombreMascotaTextBox
+        '
+        Me.NombreMascotaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "NombreMascota", True))
+        Me.NombreMascotaTextBox.Enabled = False
+        Me.NombreMascotaTextBox.Location = New System.Drawing.Point(188, 105)
+        Me.NombreMascotaTextBox.Name = "NombreMascotaTextBox"
+        Me.NombreMascotaTextBox.Size = New System.Drawing.Size(139, 20)
+        Me.NombreMascotaTextBox.TabIndex = 95
+        '
+        'IdTextBox
+        '
+        Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Id", True))
+        Me.IdTextBox.Enabled = False
+        Me.IdTextBox.Location = New System.Drawing.Point(352, 248)
+        Me.IdTextBox.Name = "IdTextBox"
+        Me.IdTextBox.Size = New System.Drawing.Size(100, 20)
+        Me.IdTextBox.TabIndex = 96
+        '
+        'ApellidoMTextBox
+        '
+        Me.ApellidoMTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "ApellidoM", True))
+        Me.ApellidoMTextBox.Enabled = False
+        Me.ApellidoMTextBox.Location = New System.Drawing.Point(352, 105)
+        Me.ApellidoMTextBox.Name = "ApellidoMTextBox"
+        Me.ApellidoMTextBox.Size = New System.Drawing.Size(140, 20)
+        Me.ApellidoMTextBox.TabIndex = 97
+        '
+        'Telefono1TextBox
+        '
+        Me.Telefono1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Telefono1", True))
+        Me.Telefono1TextBox.Enabled = False
+        Me.Telefono1TextBox.Location = New System.Drawing.Point(188, 263)
+        Me.Telefono1TextBox.Name = "Telefono1TextBox"
+        Me.Telefono1TextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Telefono1TextBox.TabIndex = 98
+        '
+        'Telefono2TextBox
+        '
+        Me.Telefono2TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Telefono2", True))
+        Me.Telefono2TextBox.Enabled = False
+        Me.Telefono2TextBox.Location = New System.Drawing.Point(188, 297)
+        Me.Telefono2TextBox.Name = "Telefono2TextBox"
+        Me.Telefono2TextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Telefono2TextBox.TabIndex = 99
+        '
+        'FechaNacimientoTextBox
+        '
+        Me.FechaNacimientoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "FechaNacimiento", True))
+        Me.FechaNacimientoTextBox.Enabled = False
+        Me.FechaNacimientoTextBox.Location = New System.Drawing.Point(352, 187)
+        Me.FechaNacimientoTextBox.Name = "FechaNacimientoTextBox"
+        Me.FechaNacimientoTextBox.Size = New System.Drawing.Size(140, 20)
+        Me.FechaNacimientoTextBox.TabIndex = 100
+        '
+        'ColorTextBox
+        '
+        Me.ColorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Color", True))
+        Me.ColorTextBox.Enabled = False
+        Me.ColorTextBox.Location = New System.Drawing.Point(352, 152)
+        Me.ColorTextBox.Name = "ColorTextBox"
+        Me.ColorTextBox.Size = New System.Drawing.Size(140, 20)
+        Me.ColorTextBox.TabIndex = 101
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Enabled = False
+        Me.TextBox1.Location = New System.Drawing.Point(352, 218)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(123, 20)
+        Me.TextBox1.TabIndex = 102
+        '
+        'CreacionTableAdapter
+        '
+        Me.CreacionTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.CreacionTableAdapter = Me.CreacionTableAdapter
+        Me.TableAdapterManager.MotivoTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.VeterinariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager.usuariosTableAdapter = Me.UsuariosTableAdapter
+        '
+        'UsuariosTableAdapter
+        '
+        Me.UsuariosTableAdapter.ClearBeforeFill = True
+        '
+        'UsuariosBindingSource
+        '
+        Me.UsuariosBindingSource.DataMember = "usuarios"
+        Me.UsuariosBindingSource.DataSource = Me.VeterinariaDataSet
+        '
+        'FechaDateTimePicker
+        '
+        Me.FechaDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.CreacionBindingSource, "Fecha", True))
+        Me.FechaDateTimePicker.Enabled = False
+        Me.FechaDateTimePicker.Location = New System.Drawing.Point(96, 206)
+        Me.FechaDateTimePicker.Name = "FechaDateTimePicker"
+        Me.FechaDateTimePicker.Size = New System.Drawing.Size(200, 25)
+        Me.FechaDateTimePicker.TabIndex = 111
+        '
+        'TotalTextBox
+        '
+        Me.TotalTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Total", True))
+        Me.TotalTextBox.Enabled = False
+        Me.TotalTextBox.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TotalTextBox.Location = New System.Drawing.Point(404, 203)
+        Me.TotalTextBox.Name = "TotalTextBox"
+        Me.TotalTextBox.Size = New System.Drawing.Size(79, 20)
+        Me.TotalTextBox.TabIndex = 110
+        '
+        'RecetaTextBox
+        '
+        Me.RecetaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Receta", True))
+        Me.RecetaTextBox.Enabled = False
+        Me.RecetaTextBox.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RecetaTextBox.Location = New System.Drawing.Point(96, 19)
+        Me.RecetaTextBox.Multiline = True
+        Me.RecetaTextBox.Name = "RecetaTextBox"
+        Me.RecetaTextBox.Size = New System.Drawing.Size(302, 79)
+        Me.RecetaTextBox.TabIndex = 109
+        '
+        'AsuntoTextBox
+        '
+        Me.AsuntoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Asunto", True))
+        Me.AsuntoTextBox.Enabled = False
+        Me.AsuntoTextBox.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AsuntoTextBox.Location = New System.Drawing.Point(96, 102)
+        Me.AsuntoTextBox.Margin = New System.Windows.Forms.Padding(5)
+        Me.AsuntoTextBox.Multiline = True
+        Me.AsuntoTextBox.Name = "AsuntoTextBox"
+        Me.AsuntoTextBox.Size = New System.Drawing.Size(302, 81)
+        Me.AsuntoTextBox.TabIndex = 108
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.BackColor = System.Drawing.Color.Transparent
+        Me.Label25.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(357, 206)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(41, 17)
+        Me.Label25.TabIndex = 107
+        Me.Label25.Text = "Total"
+        '
+        'Label26
+        '
+        Me.Label26.AutoSize = True
+        Me.Label26.BackColor = System.Drawing.Color.Transparent
+        Me.Label26.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label26.Location = New System.Drawing.Point(25, 206)
+        Me.Label26.Name = "Label26"
+        Me.Label26.Size = New System.Drawing.Size(47, 17)
+        Me.Label26.TabIndex = 106
+        Me.Label26.Text = "Fecha"
+        '
+        'Label27
+        '
+        Me.Label27.AutoSize = True
+        Me.Label27.BackColor = System.Drawing.Color.Transparent
+        Me.Label27.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label27.Location = New System.Drawing.Point(25, 130)
+        Me.Label27.Name = "Label27"
+        Me.Label27.Size = New System.Drawing.Size(54, 17)
+        Me.Label27.TabIndex = 105
+        Me.Label27.Text = "Receta"
+        '
+        'Label28
+        '
+        Me.Label28.AutoSize = True
+        Me.Label28.BackColor = System.Drawing.Color.Transparent
+        Me.Label28.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label28.Location = New System.Drawing.Point(25, 48)
+        Me.Label28.Name = "Label28"
+        Me.Label28.Size = New System.Drawing.Size(56, 17)
+        Me.Label28.TabIndex = 104
+        Me.Label28.Text = "Motivo"
+        '
         'CreacionDataGridView
         '
         Me.CreacionDataGridView.AutoGenerateColumns = False
         Me.CreacionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.CreacionDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12})
+        Me.CreacionDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16})
         Me.CreacionDataGridView.DataSource = Me.CreacionBindingSource
-        Me.CreacionDataGridView.Location = New System.Drawing.Point(12, 325)
+        Me.CreacionDataGridView.Location = New System.Drawing.Point(15, 336)
         Me.CreacionDataGridView.Name = "CreacionDataGridView"
-        Me.CreacionDataGridView.Size = New System.Drawing.Size(1207, 220)
-        Me.CreacionDataGridView.TabIndex = 92
+        Me.CreacionDataGridView.Size = New System.Drawing.Size(1212, 220)
+        Me.CreacionDataGridView.TabIndex = 111
         '
         'DataGridViewTextBoxColumn1
         '
@@ -556,174 +804,57 @@ Partial Class Form5
         Me.DataGridViewTextBoxColumn12.HeaderText = "FechaNacimiento"
         Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         '
-        'CreacionBindingSource
+        'DataGridViewTextBoxColumn13
         '
-        Me.CreacionBindingSource.DataMember = "Creacion"
-        Me.CreacionBindingSource.DataSource = Me.VeterinariaDataSet
+        Me.DataGridViewTextBoxColumn13.DataPropertyName = "Total"
+        Me.DataGridViewTextBoxColumn13.HeaderText = "Total"
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
         '
-        'VeterinariaDataSet
+        'DataGridViewTextBoxColumn14
         '
-        Me.VeterinariaDataSet.DataSetName = "VeterinariaDataSet"
-        Me.VeterinariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.DataGridViewTextBoxColumn14.DataPropertyName = "Fecha"
+        Me.DataGridViewTextBoxColumn14.HeaderText = "Fecha"
+        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
         '
-        'combotipo
+        'DataGridViewTextBoxColumn15
         '
-        Me.combotipo.Enabled = False
-        Me.combotipo.FormattingEnabled = True
-        Me.combotipo.Items.AddRange(New Object() {"Gato", "Perro", "Conejo", "Tortuga", "Rata o Raton", "Caballo", "Gallina", "Gallo", "Cerdo", "Erizo", "Pájaro"})
-        Me.combotipo.Location = New System.Drawing.Point(465, 150)
-        Me.combotipo.Name = "combotipo"
-        Me.combotipo.Size = New System.Drawing.Size(139, 21)
-        Me.combotipo.TabIndex = 58
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "Receta"
+        Me.DataGridViewTextBoxColumn15.HeaderText = "Receta"
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
         '
-        'comboraza
+        'DataGridViewTextBoxColumn16
         '
-        Me.comboraza.Enabled = False
-        Me.comboraza.FormattingEnabled = True
-        Me.comboraza.Location = New System.Drawing.Point(465, 186)
-        Me.comboraza.Name = "comboraza"
-        Me.comboraza.Size = New System.Drawing.Size(139, 21)
-        Me.comboraza.TabIndex = 59
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Asunto"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "Asunto"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
         '
-        'comboBox3
+        'Asunto
         '
-        Me.comboBox3.Enabled = False
-        Me.comboBox3.FormattingEnabled = True
-        Me.comboBox3.Items.AddRange(New Object() {"Macho", "Hembra"})
-        Me.comboBox3.Location = New System.Drawing.Point(465, 222)
-        Me.comboBox3.Name = "comboBox3"
-        Me.comboBox3.Size = New System.Drawing.Size(139, 21)
-        Me.comboBox3.TabIndex = 60
-        '
-        'NombreEncargadoTextBox
-        '
-        Me.NombreEncargadoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "NombreEncargado", True))
-        Me.NombreEncargadoTextBox.Enabled = False
-        Me.NombreEncargadoTextBox.Location = New System.Drawing.Point(465, 59)
-        Me.NombreEncargadoTextBox.Name = "NombreEncargadoTextBox"
-        Me.NombreEncargadoTextBox.Size = New System.Drawing.Size(139, 20)
-        Me.NombreEncargadoTextBox.TabIndex = 93
-        '
-        'ApellidoETextBox
-        '
-        Me.ApellidoETextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "ApellidoE", True))
-        Me.ApellidoETextBox.Enabled = False
-        Me.ApellidoETextBox.Location = New System.Drawing.Point(629, 59)
-        Me.ApellidoETextBox.Name = "ApellidoETextBox"
-        Me.ApellidoETextBox.Size = New System.Drawing.Size(140, 20)
-        Me.ApellidoETextBox.TabIndex = 94
-        '
-        'NombreMascotaTextBox
-        '
-        Me.NombreMascotaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "NombreMascota", True))
-        Me.NombreMascotaTextBox.Enabled = False
-        Me.NombreMascotaTextBox.Location = New System.Drawing.Point(465, 104)
-        Me.NombreMascotaTextBox.Name = "NombreMascotaTextBox"
-        Me.NombreMascotaTextBox.Size = New System.Drawing.Size(139, 20)
-        Me.NombreMascotaTextBox.TabIndex = 95
-        '
-        'IdTextBox
-        '
-        Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Id", True))
-        Me.IdTextBox.Enabled = False
-        Me.IdTextBox.Location = New System.Drawing.Point(629, 247)
-        Me.IdTextBox.Name = "IdTextBox"
-        Me.IdTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.IdTextBox.TabIndex = 96
-        '
-        'ApellidoMTextBox
-        '
-        Me.ApellidoMTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "ApellidoM", True))
-        Me.ApellidoMTextBox.Enabled = False
-        Me.ApellidoMTextBox.Location = New System.Drawing.Point(629, 104)
-        Me.ApellidoMTextBox.Name = "ApellidoMTextBox"
-        Me.ApellidoMTextBox.Size = New System.Drawing.Size(140, 20)
-        Me.ApellidoMTextBox.TabIndex = 97
-        '
-        'Telefono1TextBox
-        '
-        Me.Telefono1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Telefono1", True))
-        Me.Telefono1TextBox.Enabled = False
-        Me.Telefono1TextBox.Location = New System.Drawing.Point(465, 262)
-        Me.Telefono1TextBox.Name = "Telefono1TextBox"
-        Me.Telefono1TextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Telefono1TextBox.TabIndex = 98
-        '
-        'Telefono2TextBox
-        '
-        Me.Telefono2TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Telefono2", True))
-        Me.Telefono2TextBox.Enabled = False
-        Me.Telefono2TextBox.Location = New System.Drawing.Point(465, 296)
-        Me.Telefono2TextBox.Name = "Telefono2TextBox"
-        Me.Telefono2TextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Telefono2TextBox.TabIndex = 99
-        '
-        'FechaNacimientoTextBox
-        '
-        Me.FechaNacimientoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "FechaNacimiento", True))
-        Me.FechaNacimientoTextBox.Enabled = False
-        Me.FechaNacimientoTextBox.Location = New System.Drawing.Point(629, 186)
-        Me.FechaNacimientoTextBox.Name = "FechaNacimientoTextBox"
-        Me.FechaNacimientoTextBox.Size = New System.Drawing.Size(140, 20)
-        Me.FechaNacimientoTextBox.TabIndex = 100
-        '
-        'ColorTextBox
-        '
-        Me.ColorTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Color", True))
-        Me.ColorTextBox.Enabled = False
-        Me.ColorTextBox.Location = New System.Drawing.Point(629, 151)
-        Me.ColorTextBox.Name = "ColorTextBox"
-        Me.ColorTextBox.Size = New System.Drawing.Size(140, 20)
-        Me.ColorTextBox.TabIndex = 101
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(629, 217)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(123, 20)
-        Me.TextBox1.TabIndex = 102
-        '
-        'CreacionTableAdapter
-        '
-        Me.CreacionTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.CreacionTableAdapter = Me.CreacionTableAdapter
-        Me.TableAdapterManager.MotivoTableAdapter = Nothing
-        Me.TableAdapterManager.UpdateOrder = WindowsApplication1.VeterinariaDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
-        Me.TableAdapterManager.usuariosTableAdapter = Me.UsuariosTableAdapter
-        '
-        'UsuariosTableAdapter
-        '
-        Me.UsuariosTableAdapter.ClearBeforeFill = True
-        '
-        'UsuariosBindingSource
-        '
-        Me.UsuariosBindingSource.DataMember = "usuarios"
-        Me.UsuariosBindingSource.DataSource = Me.VeterinariaDataSet
-        '
-        'Button8
-        '
-        Me.Button8.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button8.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(638, 283)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 23)
-        Me.Button8.TabIndex = 103
-        Me.Button8.Text = "Motivo"
-        Me.Button8.UseVisualStyleBackColor = False
+        Me.Asunto.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Asunto.Controls.Add(Me.RecetaTextBox)
+        Me.Asunto.Controls.Add(Me.AsuntoTextBox)
+        Me.Asunto.Controls.Add(Me.Label28)
+        Me.Asunto.Controls.Add(Me.Label25)
+        Me.Asunto.Controls.Add(Me.TotalTextBox)
+        Me.Asunto.Controls.Add(Me.FechaDateTimePicker)
+        Me.Asunto.Controls.Add(Me.Label27)
+        Me.Asunto.Controls.Add(Me.Label26)
+        Me.Asunto.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Asunto.Location = New System.Drawing.Point(663, 60)
+        Me.Asunto.Name = "Asunto"
+        Me.Asunto.Size = New System.Drawing.Size(526, 257)
+        Me.Asunto.TabIndex = 113
+        Me.Asunto.TabStop = False
+        Me.Asunto.Text = "Asunto"
         '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.pastel_purple_blur_gradation_wallpaper_preview
-        Me.ClientSize = New System.Drawing.Size(1239, 709)
-        Me.Controls.Add(Me.Button8)
+        Me.ClientSize = New System.Drawing.Size(1239, 749)
+        Me.Controls.Add(Me.Asunto)
+        Me.Controls.Add(Me.CreacionDataGridView)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ColorTextBox)
         Me.Controls.Add(Me.FechaNacimientoTextBox)
@@ -734,7 +865,6 @@ Partial Class Form5
         Me.Controls.Add(Me.NombreMascotaTextBox)
         Me.Controls.Add(Me.ApellidoETextBox)
         Me.Controls.Add(Me.NombreEncargadoTextBox)
-        Me.Controls.Add(Me.CreacionDataGridView)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.Label23)
@@ -771,13 +901,16 @@ Partial Class Form5
         Me.Controls.Add(Me.label2)
         Me.Controls.Add(Me.label1)
         Me.Name = "Form5"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "CREACIÓN DE FICHA"
         CType(Me.CreacionBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VeterinariaDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.CreacionDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CreacionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VeterinariaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.UsuariosBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CreacionDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Asunto.ResumeLayout(False)
+        Me.Asunto.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -824,19 +957,6 @@ Partial Class Form5
     Private WithEvents Label23 As System.Windows.Forms.Label
     Private WithEvents Label24 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents CreacionDataGridView As System.Windows.Forms.DataGridView
-    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
     Private WithEvents combotipo As System.Windows.Forms.ComboBox
     Private WithEvents comboraza As System.Windows.Forms.ComboBox
     Private WithEvents comboBox3 As System.Windows.Forms.ComboBox
@@ -850,5 +970,30 @@ Partial Class Form5
     Friend WithEvents FechaNacimientoTextBox As System.Windows.Forms.TextBox
     Friend WithEvents ColorTextBox As System.Windows.Forms.TextBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents Button8 As System.Windows.Forms.Button
+    Friend WithEvents FechaDateTimePicker As System.Windows.Forms.DateTimePicker
+    Friend WithEvents TotalTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents RecetaTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents AsuntoTextBox As System.Windows.Forms.TextBox
+    Private WithEvents Label25 As System.Windows.Forms.Label
+    Private WithEvents Label26 As System.Windows.Forms.Label
+    Private WithEvents Label27 As System.Windows.Forms.Label
+    Private WithEvents Label28 As System.Windows.Forms.Label
+    Friend WithEvents CreacionDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents Asunto As System.Windows.Forms.GroupBox
 End Class

@@ -201,7 +201,7 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.bonito_en_colores_pastel_abstracto_del_cielo_azul_del_papel_de_la_textura_de_la_acuarela_del_fondo_79092755
-        Me.ClientSize = New System.Drawing.Size(445, 487)
+        Me.ClientSize = New System.Drawing.Size(459, 487)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.label7)
@@ -217,6 +217,7 @@ Partial Class Form2
         Me.Controls.Add(Me.pictureBox1)
         Me.Controls.Add(Me.label1)
         Me.Name = "Form2"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "OPCIONES"
         CType(Me.pictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

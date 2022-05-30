@@ -335,6 +335,10 @@ Public Class Form5
     End Sub
 
     Private Sub Form5_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        RecetaTextBox.Text = ""
+        AsuntoTextBox.Text = ""
+        TotalTextBox.Text = ""
+        FechaDateTimePicker.Refresh()
         NombreEncargadoTextBox.Text = ""
         ApellidoETextBox.Text = ""
         NombreMascotaTextBox.Text = ""
@@ -358,7 +362,7 @@ Public Class Form5
 
         Else
             MsgBox("Datos Guardados", vbOKOnly + vbInformation, "Exito")
-            Me.CreacionTableAdapter.Insertar(NombreEncargadoTextBox.Text, ApellidoETextBox.Text, NombreMascotaTextBox.Text, ApellidoMTextBox.Text, combotipo.Text, ColorTextBox.Text, comboraza.Text, comboBox3.Text, Telefono1TextBox.Text, Telefono2TextBox.Text, FechaNacimientoTextBox.Text)
+            Me.CreacionTableAdapter.Insertar(NombreEncargadoTextBox.Text, ApellidoETextBox.Text, NombreMascotaTextBox.Text, ApellidoMTextBox.Text, combotipo.Text, ColorTextBox.Text, comboraza.Text, comboBox3.Text, Telefono1TextBox.Text, Telefono2TextBox.Text, FechaNacimientoTextBox.Text, AsuntoTextBox.Text, RecetaTextBox.Text, TotalTextBox.Text, FechaDateTimePicker.Text)
             Me.CreacionTableAdapter.CreacionF(Me.VeterinariaDataSet.Creacion)
             NombreEncargadoTextBox.Clear()
             ApellidoETextBox.Clear()
@@ -390,12 +394,20 @@ Public Class Form5
             Telefono2TextBox.Enabled = False
             FechaNacimientoTextBox.Enabled = False
             TextBox1.Enabled = False
+            AsuntoTextBox.Clear()
+            RecetaTextBox.Clear()
+            FechaDateTimePicker.ResetText()
+            TotalTextBox.Clear()
         End If
     End Sub
 
     Private Sub button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button2.Click
         NombreEncargadoTextBox.Clear()
         ApellidoETextBox.Clear()
+        AsuntoTextBox.Clear()
+        RecetaTextBox.Clear()
+        FechaDateTimePicker.ResetText()
+        TotalTextBox.Clear()
         NombreMascotaTextBox.Clear()
         ApellidoMTextBox.Clear()
         ColorTextBox.Clear()
@@ -405,6 +417,10 @@ Public Class Form5
         comboBox3.ResetText()
         comboraza.ResetText()
         combotipo.ResetText()
+        RecetaTextBox.Enabled = True
+        AsuntoTextBox.Enabled = True
+        FechaDateTimePicker.Enabled = True
+        TotalTextBox.Enabled = True
         button4.Enabled = True
         NombreEncargadoTextBox.Enabled = True
         ApellidoETextBox.Enabled = True
@@ -461,6 +477,10 @@ Public Class Form5
         comboBox3.ResetText()
         comboraza.ResetText()
         combotipo.ResetText()
+        AsuntoTextBox.Clear()
+        RecetaTextBox.Clear()
+        FechaDateTimePicker.ResetText()
+        TotalTextBox.Clear()
         button4.Enabled = False
         button1.Enabled = True
         button2.Enabled = True
@@ -498,14 +518,10 @@ Public Class Form5
 
     End Sub
 
-
-    Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
-        Form7.Show()
-        Me.Close()
-    End Sub
-
     Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click
         Form8.Show()
         Me.Close()
     End Sub
+
+
 End Class

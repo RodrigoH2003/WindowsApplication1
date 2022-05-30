@@ -10,7 +10,7 @@
     Private Sub Form9_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         'TODO: esta línea de código carga datos en la tabla 'VeterinariaDataSet.usuarios' Puede moverla o quitarla según sea necesario.
         Me.UsuariosTableAdapter.Fill(Me.VeterinariaDataSet.usuarios)
-
+        Me.Timer1.Enabled = True
     End Sub
 
     Private Sub button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button5.Click
@@ -19,8 +19,28 @@
     End Sub
 
     Private Sub button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button3.Click
-        MsgBox("Paciente Borrado", vbOKOnly + vbInformation, "Exito")
+        MsgBox("Usuario Borrado", vbOKOnly + vbInformation, "Exito")
+        UsuariosDataGridView.Enabled = False
         Me.UsuariosTableAdapter.borrar(IdTextBox.Text)
         Me.UsuariosTableAdapter.Fill(Me.VeterinariaDataSet.usuarios)
+    End Sub
+
+    Private Sub button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button2.Click
+        Me.UsuariosTableAdapter.Edit(IdTextBox.Text, NombreTextBox.Text, UsuarioTextBox.Text, NivelTextBox.Text, PasswordTextBox.Text, IdTextBox.Text)
+        Me.UsuariosTableAdapter.Fill(Me.VeterinariaDataSet.usuarios)
+        UsuariosDataGridView.Enabled = False
+    End Sub
+
+    Private Sub button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
+
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        UsuariosDataGridView.Enabled = True
+    End Sub
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        Me.Label22.Text = DateTime.Now.ToShortTimeString
+        Me.Label21.Text = DateTime.Now.ToLongDateString
     End Sub
 End Class

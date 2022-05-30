@@ -165,6 +165,7 @@ Partial Class Form4
         Me.Controls.Add(Me.label2)
         Me.Controls.Add(Me.label1)
         Me.Name = "Form4"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BUSQUEDA DE USUSARIOS"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -18,13 +18,13 @@
         ApellidoTextBox.Text = ""
         UsuarioTextBox.Text = ""
         PasswordTextBox.Text = ""
-        NivelTextBox.Text = ""
+        NivelComboBox.Text = ""
         textBox4.Text = ""
         NombreTextBox.Enabled = True
         ApellidoTextBox.Enabled = True
         UsuarioTextBox.Enabled = True
         PasswordTextBox.Enabled = True
-        NivelTextBox.Enabled = True
+        NivelComboBox.Enabled = True
         textBox4.Enabled = True
     End Sub
 
@@ -34,7 +34,7 @@
         ApellidoTextBox.Clear()
         PasswordTextBox.Clear()
         UsuarioTextBox.Clear()
-        NivelTextBox.Clear()
+        NivelComboBox.ResetText()
         textBox4.Clear()
         button1.Enabled = True
         button2.Enabled = True
@@ -47,7 +47,7 @@
         ApellidoTextBox.Enabled = False
         PasswordTextBox.Enabled = False
         UsuarioTextBox.Enabled = False
-        NivelTextBox.Enabled = False
+        NivelComboBox.Enabled = False
         textBox4.Enabled = False
     End Sub
 
@@ -71,16 +71,17 @@
         Me.UsuariosTableAdapter.Fill(Me.VeterinariaDataSet.usuarios)
 
         Me.UsuariosBindingSource.AddNew()
-
+        Me.Timer1.Enabled = True
     End Sub
 
     Private Sub button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button6.Click
-        If NombreTextBox.Text = "" Or ApellidoTextBox.Text = "" Or UsuarioTextBox.Text = "" Or PasswordTextBox.Text = "" Or textBox4.Text = "" Or NivelTextBox.Text = "" Then
+        If NombreTextBox.Text = "" Or ApellidoTextBox.Text = "" Or UsuarioTextBox.Text = "" Or PasswordTextBox.Text = "" Or textBox4.Text = "" Or NivelComboBox.Text = "" Then
             MsgBox("Hay Campos Vacíos", vbOKOnly + vbInformation, "ADVERTENCIA")
-
+        ElseIf PasswordTextBox.Text <> textBox4.Text Then
+            MsgBox("Las contraseñas no coinciden, vuela a introducirlas por favor", vbOKOnly + vbInformation, "ADVERTENCIA")
         Else
             MsgBox("Datos Guardados", vbOKOnly + vbInformation, "Exito")
-            Me.UsuariosTableAdapter.ingresar(NombreTextBox.Text, ApellidoTextBox.Text, UsuarioTextBox.Text, PasswordTextBox.Text, NivelTextBox.Text)
+            Me.UsuariosTableAdapter.ingresar(NombreTextBox.Text, ApellidoTextBox.Text, UsuarioTextBox.Text, PasswordTextBox.Text, NivelComboBox.Text)
             Me.UsuariosTableAdapter.Fill(Me.VeterinariaDataSet.usuarios)
             Me.UsuariosBindingSource.EndEdit()
             Me.TableAdapterManager.UpdateAll(Me.VeterinariaDataSet)
@@ -91,20 +92,19 @@
             button3.Enabled = True
             button4.Enabled = True
             button7.Enabled = True
+            NombreTextBox.Enabled = False
+            ApellidoTextBox.Enabled = False
+            PasswordTextBox.Enabled = False
+            UsuarioTextBox.Enabled = False
+            textBox4.Enabled = False
+            NivelComboBox.Enabled = False
+            CheckBox1.Enabled = False
         End If
     End Sub
 
     Private Sub button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button2.Click
         Form9.Show()
         Me.Close()
-    End Sub
-
-    Private Sub label8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles label8.Click
-
-    End Sub
-
-    Private Sub label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles label7.Click
-
     End Sub
 
     Private Sub button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button3.Click
@@ -115,5 +115,10 @@
     Private Sub button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button7.Click
         Form4.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
+        Me.Label22.Text = DateTime.Now.ToShortTimeString
+        Me.Label21.Text = DateTime.Now.ToLongDateString
     End Sub
 End Class
