@@ -13,7 +13,6 @@
         button4.Enabled = False
         button2.Enabled = False
         button6.Enabled = True
-        button7.Enabled = False
         NombreTextBox.Text = ""
         ApellidoTextBox.Text = ""
         UsuarioTextBox.Text = ""
@@ -42,7 +41,6 @@
         button4.Enabled = True
         button5.Enabled = False
         button6.Enabled = False
-        button7.Enabled = True
         NombreTextBox.Enabled = False
         ApellidoTextBox.Enabled = False
         PasswordTextBox.Enabled = False
@@ -91,7 +89,6 @@
             button2.Enabled = True
             button3.Enabled = True
             button4.Enabled = True
-            button7.Enabled = True
             NombreTextBox.Enabled = False
             ApellidoTextBox.Enabled = False
             PasswordTextBox.Enabled = False
@@ -112,13 +109,68 @@
         Me.Close()
     End Sub
 
-    Private Sub button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button7.Click
-        Form4.Show()
-        Me.Close()
-    End Sub
-
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Me.Label22.Text = DateTime.Now.ToShortTimeString
         Me.Label21.Text = DateTime.Now.ToLongDateString
+    End Sub
+
+    Private Sub NombreTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles NombreTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            ApellidoTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub NombreTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NombreTextBox.TextChanged
+
+    End Sub
+
+    Private Sub ApellidoTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ApellidoTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            UsuarioTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub ApellidoTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ApellidoTextBox.TextChanged
+
+    End Sub
+
+    Private Sub UsuarioTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles UsuarioTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            PasswordTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub UsuarioTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UsuarioTextBox.TextChanged
+
+    End Sub
+
+    Private Sub PasswordTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles PasswordTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            textBox4.Focus()
+        End If
+    End Sub
+
+    Private Sub PasswordTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PasswordTextBox.TextChanged
+
+    End Sub
+
+    Private Sub textBox4_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles textBox4.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            NivelComboBox.Focus()
+        End If
+    End Sub
+
+    Private Sub textBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles textBox4.TextChanged
+
+    End Sub
+
+    Private Sub NivelComboBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles NivelComboBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            button6.Focus()
+        End If
+    End Sub
+
+    Private Sub NivelComboBox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NivelComboBox.SelectedIndexChanged
+
     End Sub
 End Class

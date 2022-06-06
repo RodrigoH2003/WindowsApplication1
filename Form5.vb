@@ -7,6 +7,12 @@ Public Class Form5
         Me.Close()
     End Sub
 
+    Private Sub combotipo_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles combotipo.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            ColorTextBox.Focus()
+        End If
+    End Sub
+
     Private Sub combotipo_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles combotipo.SelectedIndexChanged
         comboraza.Items.Clear()
         Dim tipo As String
@@ -362,7 +368,7 @@ Public Class Form5
 
         Else
             MsgBox("Datos Guardados", vbOKOnly + vbInformation, "Exito")
-            Me.CreacionTableAdapter.Insertar(NombreEncargadoTextBox.Text, ApellidoETextBox.Text, NombreMascotaTextBox.Text, ApellidoMTextBox.Text, combotipo.Text, ColorTextBox.Text, comboraza.Text, comboBox3.Text, Telefono1TextBox.Text, Telefono2TextBox.Text, FechaNacimientoTextBox.Text, AsuntoTextBox.Text, RecetaTextBox.Text, TotalTextBox.Text, FechaDateTimePicker.Text)
+            Me.CreacionTableAdapter.Insertar(NombreEncargadoTextBox.Text, ApellidoETextBox.Text, NombreMascotaTextBox.Text, ApellidoMTextBox.Text, combotipo.Text, ColorTextBox.Text, comboraza.Text, comboBox3.Text, Telefono1TextBox.Text, Telefono2TextBox.Text, FechaNacimientoTextBox.Text, AsuntoTextBox.Text, RecetaTextBox.Text, FechaDateTimePicker.Text, TotalTextBox.Text)
             Me.CreacionTableAdapter.CreacionF(Me.VeterinariaDataSet.Creacion)
             NombreEncargadoTextBox.Clear()
             ApellidoETextBox.Clear()
@@ -481,6 +487,10 @@ Public Class Form5
         RecetaTextBox.Clear()
         FechaDateTimePicker.ResetText()
         TotalTextBox.Clear()
+        AsuntoTextBox.Enabled = False
+        RecetaTextBox.Enabled = False
+        FechaDateTimePicker.Enabled = False
+        TotalTextBox.Enabled = False
         button4.Enabled = False
         button1.Enabled = True
         button2.Enabled = True
@@ -523,5 +533,145 @@ Public Class Form5
         Me.Close()
     End Sub
 
+    Private Sub NombreEncargadoTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles NombreEncargadoTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            ApellidoETextBox.Focus()
+        End If
+    End Sub
 
+
+  
+    Private Sub NombreEncargadoTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NombreEncargadoTextBox.TextChanged
+
+    End Sub
+
+    Private Sub ApellidoETextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ApellidoETextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            NombreMascotaTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub ApellidoETextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ApellidoETextBox.TextChanged
+
+    End Sub
+
+    Private Sub NombreMascotaTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles NombreMascotaTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            ApellidoMTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub NombreMascotaTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NombreMascotaTextBox.TextChanged
+
+    End Sub
+
+    Private Sub ApellidoMTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ApellidoMTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            combotipo.Focus()
+        End If
+    End Sub
+
+    Private Sub ApellidoMTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ApellidoMTextBox.TextChanged
+
+    End Sub
+
+    Private Sub ColorTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles ColorTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            comboraza.Focus()
+        End If
+    End Sub
+
+    Private Sub ColorTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ColorTextBox.TextChanged
+
+    End Sub
+
+    Private Sub comboraza_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles comboraza.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            FechaNacimientoTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub comboraza_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles comboraza.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub FechaNacimientoTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles FechaNacimientoTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            comboBox3.Focus()
+        End If
+    End Sub
+
+    Private Sub FechaNacimientoTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FechaNacimientoTextBox.TextChanged
+
+    End Sub
+
+    Private Sub comboBox3_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles comboBox3.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            Telefono1TextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub comboBox3_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles comboBox3.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub Telefono1TextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Telefono1TextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            Telefono2TextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub Telefono1TextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Telefono1TextBox.TextChanged
+
+    End Sub
+
+    Private Sub Telefono2TextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles Telefono2TextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            AsuntoTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub Telefono2TextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Telefono2TextBox.TextChanged
+
+    End Sub
+
+    Private Sub AsuntoTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles AsuntoTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            RecetaTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub AsuntoTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AsuntoTextBox.TextChanged
+
+    End Sub
+
+    Private Sub RecetaTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles RecetaTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            FechaDateTimePicker.Focus()
+        End If
+    End Sub
+
+    Private Sub RecetaTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RecetaTextBox.TextChanged
+
+    End Sub
+
+    Private Sub FechaDateTimePicker_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles FechaDateTimePicker.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            TotalTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub FechaDateTimePicker_ValueChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FechaDateTimePicker.ValueChanged
+
+    End Sub
+
+    Private Sub TotalTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TotalTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            button4.Focus()
+        End If
+    End Sub
+
+    Private Sub TotalTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TotalTextBox.TextChanged
+
+    End Sub
 End Class

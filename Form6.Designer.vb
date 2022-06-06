@@ -259,7 +259,7 @@ Partial Class Form6
         'Button1
         '
         Me.Button1.Image = Global.WindowsApplication1.My.Resources.Resources.sobresalir
-        Me.Button1.Location = New System.Drawing.Point(789, 343)
+        Me.Button1.Location = New System.Drawing.Point(693, 340)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 63)
         Me.Button1.TabIndex = 96
@@ -269,7 +269,7 @@ Partial Class Form6
         '
         Me.button5.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.button5.Image = Global.WindowsApplication1.My.Resources.Resources.cerrar_sesion
-        Me.button5.Location = New System.Drawing.Point(633, 337)
+        Me.button5.Location = New System.Drawing.Point(537, 334)
         Me.button5.Name = "button5"
         Me.button5.Size = New System.Drawing.Size(74, 74)
         Me.button5.TabIndex = 67
@@ -279,7 +279,7 @@ Partial Class Form6
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(649, 414)
+        Me.Label2.Location = New System.Drawing.Point(553, 411)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(37, 17)
         Me.Label2.TabIndex = 97
@@ -289,7 +289,7 @@ Partial Class Form6
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(786, 409)
+        Me.Label3.Location = New System.Drawing.Point(690, 406)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(86, 15)
         Me.Label3.TabIndex = 98

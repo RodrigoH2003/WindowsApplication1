@@ -23,32 +23,31 @@ Partial Class Form8
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim IdLabel As System.Windows.Forms.Label
         Me.panel1 = New System.Windows.Forms.Panel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.NombreEncargadoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ApellidoEDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NombreMascotaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ApellidoMDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TipoAnimalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ColorDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RazaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.GeneroDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Telefono1DataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaNacimientoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TotalDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FechaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.RecetaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AsuntoDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.CreacionDataGridView = New System.Windows.Forms.DataGridView()
+        Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn10 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DataGridViewTextBoxColumn16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.CreacionBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.VeterinariaDataSet = New WindowsApplication1.VeterinariaDataSet()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.NombreMascotaTextBox = New System.Windows.Forms.TextBox()
-        Me.ApellidoETextBox = New System.Windows.Forms.TextBox()
-        Me.Telefono1TextBox = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.IdTextBox = New System.Windows.Forms.TextBox()
         Me.CreacionBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
         Me.label6 = New System.Windows.Forms.Label()
         Me.label5 = New System.Windows.Forms.Label()
@@ -69,8 +68,9 @@ Partial Class Form8
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        IdLabel = New System.Windows.Forms.Label()
         Me.panel1.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CreacionDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CreacionBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.VeterinariaDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -78,110 +78,131 @@ Partial Class Form8
         CType(Me.CreacionBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
+        'IdLabel
+        '
+        IdLabel.AutoSize = True
+        IdLabel.Location = New System.Drawing.Point(317, 14)
+        IdLabel.Name = "IdLabel"
+        IdLabel.Size = New System.Drawing.Size(21, 15)
+        IdLabel.TabIndex = 28
+        IdLabel.Text = "Id:"
+        '
         'panel1
         '
         Me.panel1.BackColor = System.Drawing.Color.PapayaWhip
-        Me.panel1.Controls.Add(Me.DataGridView1)
+        Me.panel1.Controls.Add(Me.CreacionDataGridView)
         Me.panel1.Controls.Add(Me.GroupBox1)
         Me.panel1.Location = New System.Drawing.Point(12, 57)
         Me.panel1.Name = "panel1"
-        Me.panel1.Size = New System.Drawing.Size(498, 388)
+        Me.panel1.Size = New System.Drawing.Size(498, 449)
         Me.panel1.TabIndex = 23
         '
-        'DataGridView1
+        'CreacionDataGridView
         '
-        Me.DataGridView1.AutoGenerateColumns = False
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NombreEncargadoDataGridViewTextBoxColumn, Me.ApellidoEDataGridViewTextBoxColumn, Me.NombreMascotaDataGridViewTextBoxColumn, Me.ApellidoMDataGridViewTextBoxColumn, Me.TipoAnimalDataGridViewTextBoxColumn, Me.ColorDataGridViewTextBoxColumn, Me.RazaDataGridViewTextBoxColumn, Me.GeneroDataGridViewTextBoxColumn, Me.Telefono1DataGridViewTextBoxColumn, Me.FechaNacimientoDataGridViewTextBoxColumn, Me.TotalDataGridViewTextBoxColumn, Me.FechaDataGridViewTextBoxColumn, Me.RecetaDataGridViewTextBoxColumn, Me.AsuntoDataGridViewTextBoxColumn})
-        Me.DataGridView1.DataSource = Me.CreacionBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(9, 152)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(469, 219)
-        Me.DataGridView1.TabIndex = 3
+        Me.CreacionDataGridView.AutoGenerateColumns = False
+        Me.CreacionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.CreacionDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn2, Me.DataGridViewTextBoxColumn3, Me.DataGridViewTextBoxColumn4, Me.DataGridViewTextBoxColumn5, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn7, Me.DataGridViewTextBoxColumn8, Me.DataGridViewTextBoxColumn9, Me.DataGridViewTextBoxColumn10, Me.DataGridViewTextBoxColumn11, Me.DataGridViewTextBoxColumn12, Me.DataGridViewTextBoxColumn13, Me.DataGridViewTextBoxColumn14, Me.DataGridViewTextBoxColumn15, Me.DataGridViewTextBoxColumn16})
+        Me.CreacionDataGridView.DataSource = Me.CreacionBindingSource
+        Me.CreacionDataGridView.Location = New System.Drawing.Point(18, 168)
+        Me.CreacionDataGridView.Name = "CreacionDataGridView"
+        Me.CreacionDataGridView.Size = New System.Drawing.Size(462, 246)
+        Me.CreacionDataGridView.TabIndex = 2
         '
-        'NombreEncargadoDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn1
         '
-        Me.NombreEncargadoDataGridViewTextBoxColumn.DataPropertyName = "NombreEncargado"
-        Me.NombreEncargadoDataGridViewTextBoxColumn.HeaderText = "NombreEncargado"
-        Me.NombreEncargadoDataGridViewTextBoxColumn.Name = "NombreEncargadoDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn1.DataPropertyName = "NombreEncargado"
+        Me.DataGridViewTextBoxColumn1.HeaderText = "NombreEncargado"
+        Me.DataGridViewTextBoxColumn1.Name = "DataGridViewTextBoxColumn1"
         '
-        'ApellidoEDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn2
         '
-        Me.ApellidoEDataGridViewTextBoxColumn.DataPropertyName = "ApellidoE"
-        Me.ApellidoEDataGridViewTextBoxColumn.HeaderText = "ApellidoE"
-        Me.ApellidoEDataGridViewTextBoxColumn.Name = "ApellidoEDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn2.DataPropertyName = "ApellidoE"
+        Me.DataGridViewTextBoxColumn2.HeaderText = "ApellidoE"
+        Me.DataGridViewTextBoxColumn2.Name = "DataGridViewTextBoxColumn2"
         '
-        'NombreMascotaDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn3
         '
-        Me.NombreMascotaDataGridViewTextBoxColumn.DataPropertyName = "NombreMascota"
-        Me.NombreMascotaDataGridViewTextBoxColumn.HeaderText = "NombreMascota"
-        Me.NombreMascotaDataGridViewTextBoxColumn.Name = "NombreMascotaDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn3.DataPropertyName = "NombreMascota"
+        Me.DataGridViewTextBoxColumn3.HeaderText = "NombreMascota"
+        Me.DataGridViewTextBoxColumn3.Name = "DataGridViewTextBoxColumn3"
         '
-        'ApellidoMDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn4
         '
-        Me.ApellidoMDataGridViewTextBoxColumn.DataPropertyName = "ApellidoM"
-        Me.ApellidoMDataGridViewTextBoxColumn.HeaderText = "ApellidoM"
-        Me.ApellidoMDataGridViewTextBoxColumn.Name = "ApellidoMDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn4.DataPropertyName = "Id"
+        Me.DataGridViewTextBoxColumn4.HeaderText = "Id"
+        Me.DataGridViewTextBoxColumn4.Name = "DataGridViewTextBoxColumn4"
         '
-        'TipoAnimalDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn5
         '
-        Me.TipoAnimalDataGridViewTextBoxColumn.DataPropertyName = "TipoAnimal"
-        Me.TipoAnimalDataGridViewTextBoxColumn.HeaderText = "TipoAnimal"
-        Me.TipoAnimalDataGridViewTextBoxColumn.Name = "TipoAnimalDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn5.DataPropertyName = "ApellidoM"
+        Me.DataGridViewTextBoxColumn5.HeaderText = "ApellidoM"
+        Me.DataGridViewTextBoxColumn5.Name = "DataGridViewTextBoxColumn5"
         '
-        'ColorDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn6
         '
-        Me.ColorDataGridViewTextBoxColumn.DataPropertyName = "Color"
-        Me.ColorDataGridViewTextBoxColumn.HeaderText = "Color"
-        Me.ColorDataGridViewTextBoxColumn.Name = "ColorDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn6.DataPropertyName = "TipoAnimal"
+        Me.DataGridViewTextBoxColumn6.HeaderText = "TipoAnimal"
+        Me.DataGridViewTextBoxColumn6.Name = "DataGridViewTextBoxColumn6"
         '
-        'RazaDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn7
         '
-        Me.RazaDataGridViewTextBoxColumn.DataPropertyName = "Raza"
-        Me.RazaDataGridViewTextBoxColumn.HeaderText = "Raza"
-        Me.RazaDataGridViewTextBoxColumn.Name = "RazaDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn7.DataPropertyName = "Color"
+        Me.DataGridViewTextBoxColumn7.HeaderText = "Color"
+        Me.DataGridViewTextBoxColumn7.Name = "DataGridViewTextBoxColumn7"
         '
-        'GeneroDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn8
         '
-        Me.GeneroDataGridViewTextBoxColumn.DataPropertyName = "Genero"
-        Me.GeneroDataGridViewTextBoxColumn.HeaderText = "Genero"
-        Me.GeneroDataGridViewTextBoxColumn.Name = "GeneroDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn8.DataPropertyName = "Raza"
+        Me.DataGridViewTextBoxColumn8.HeaderText = "Raza"
+        Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         '
-        'Telefono1DataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn9
         '
-        Me.Telefono1DataGridViewTextBoxColumn.DataPropertyName = "Telefono1"
-        Me.Telefono1DataGridViewTextBoxColumn.HeaderText = "Telefono1"
-        Me.Telefono1DataGridViewTextBoxColumn.Name = "Telefono1DataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn9.DataPropertyName = "Genero"
+        Me.DataGridViewTextBoxColumn9.HeaderText = "Genero"
+        Me.DataGridViewTextBoxColumn9.Name = "DataGridViewTextBoxColumn9"
         '
-        'FechaNacimientoDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn10
         '
-        Me.FechaNacimientoDataGridViewTextBoxColumn.DataPropertyName = "FechaNacimiento"
-        Me.FechaNacimientoDataGridViewTextBoxColumn.HeaderText = "FechaNacimiento"
-        Me.FechaNacimientoDataGridViewTextBoxColumn.Name = "FechaNacimientoDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn10.DataPropertyName = "Telefono1"
+        Me.DataGridViewTextBoxColumn10.HeaderText = "Telefono1"
+        Me.DataGridViewTextBoxColumn10.Name = "DataGridViewTextBoxColumn10"
         '
-        'TotalDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn11
         '
-        Me.TotalDataGridViewTextBoxColumn.DataPropertyName = "Total"
-        Me.TotalDataGridViewTextBoxColumn.HeaderText = "Total"
-        Me.TotalDataGridViewTextBoxColumn.Name = "TotalDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn11.DataPropertyName = "Telefono2"
+        Me.DataGridViewTextBoxColumn11.HeaderText = "Telefono2"
+        Me.DataGridViewTextBoxColumn11.Name = "DataGridViewTextBoxColumn11"
         '
-        'FechaDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn12
         '
-        Me.FechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha"
-        Me.FechaDataGridViewTextBoxColumn.HeaderText = "Fecha"
-        Me.FechaDataGridViewTextBoxColumn.Name = "FechaDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn12.DataPropertyName = "FechaNacimiento"
+        Me.DataGridViewTextBoxColumn12.HeaderText = "FechaNacimiento"
+        Me.DataGridViewTextBoxColumn12.Name = "DataGridViewTextBoxColumn12"
         '
-        'RecetaDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn13
         '
-        Me.RecetaDataGridViewTextBoxColumn.DataPropertyName = "Receta"
-        Me.RecetaDataGridViewTextBoxColumn.HeaderText = "Receta"
-        Me.RecetaDataGridViewTextBoxColumn.Name = "RecetaDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn13.DataPropertyName = "Total"
+        Me.DataGridViewTextBoxColumn13.HeaderText = "Total"
+        Me.DataGridViewTextBoxColumn13.Name = "DataGridViewTextBoxColumn13"
         '
-        'AsuntoDataGridViewTextBoxColumn
+        'DataGridViewTextBoxColumn14
         '
-        Me.AsuntoDataGridViewTextBoxColumn.DataPropertyName = "Asunto"
-        Me.AsuntoDataGridViewTextBoxColumn.HeaderText = "Asunto"
-        Me.AsuntoDataGridViewTextBoxColumn.Name = "AsuntoDataGridViewTextBoxColumn"
+        Me.DataGridViewTextBoxColumn14.DataPropertyName = "Fecha"
+        Me.DataGridViewTextBoxColumn14.HeaderText = "Fecha"
+        Me.DataGridViewTextBoxColumn14.Name = "DataGridViewTextBoxColumn14"
+        '
+        'DataGridViewTextBoxColumn15
+        '
+        Me.DataGridViewTextBoxColumn15.DataPropertyName = "Receta"
+        Me.DataGridViewTextBoxColumn15.HeaderText = "Receta"
+        Me.DataGridViewTextBoxColumn15.Name = "DataGridViewTextBoxColumn15"
+        '
+        'DataGridViewTextBoxColumn16
+        '
+        Me.DataGridViewTextBoxColumn16.DataPropertyName = "Asunto"
+        Me.DataGridViewTextBoxColumn16.HeaderText = "Asunto"
+        Me.DataGridViewTextBoxColumn16.Name = "DataGridViewTextBoxColumn16"
         '
         'CreacionBindingSource
         '
@@ -196,87 +217,42 @@ Partial Class Form8
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.NavajoWhite
-        Me.GroupBox1.Controls.Add(Me.CheckBox3)
-        Me.GroupBox1.Controls.Add(Me.CheckBox2)
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
-        Me.GroupBox1.Controls.Add(Me.NombreMascotaTextBox)
-        Me.GroupBox1.Controls.Add(Me.ApellidoETextBox)
-        Me.GroupBox1.Controls.Add(Me.Telefono1TextBox)
+        Me.GroupBox1.Controls.Add(IdLabel)
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Button6)
+        Me.GroupBox1.Controls.Add(Me.IdTextBox)
         Me.GroupBox1.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(98, 3)
+        Me.GroupBox1.Location = New System.Drawing.Point(62, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(293, 149)
+        Me.GroupBox1.Size = New System.Drawing.Size(377, 149)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Buscar Paciente"
         '
-        'CheckBox3
+        'TextBox1
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(140, 84)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(110, 19)
-        Me.CheckBox3.TabIndex = 29
-        Me.CheckBox3.Text = "Telefono Dueño"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(139, 59)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(117, 19)
-        Me.CheckBox2.TabIndex = 28
-        Me.CheckBox2.Text = "Nombre Mascota"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(140, 31)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(109, 19)
-        Me.CheckBox1.TabIndex = 27
-        Me.CheckBox1.Text = "Apellido Dueño"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'NombreMascotaTextBox
-        '
-        Me.NombreMascotaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "NombreMascota", True))
-        Me.NombreMascotaTextBox.Enabled = False
-        Me.NombreMascotaTextBox.Location = New System.Drawing.Point(7, 52)
-        Me.NombreMascotaTextBox.Name = "NombreMascotaTextBox"
-        Me.NombreMascotaTextBox.Size = New System.Drawing.Size(100, 22)
-        Me.NombreMascotaTextBox.TabIndex = 4
-        '
-        'ApellidoETextBox
-        '
-        Me.ApellidoETextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "ApellidoE", True))
-        Me.ApellidoETextBox.Enabled = False
-        Me.ApellidoETextBox.Location = New System.Drawing.Point(7, 21)
-        Me.ApellidoETextBox.Name = "ApellidoETextBox"
-        Me.ApellidoETextBox.Size = New System.Drawing.Size(100, 22)
-        Me.ApellidoETextBox.TabIndex = 26
-        '
-        'Telefono1TextBox
-        '
-        Me.Telefono1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Telefono1", True))
-        Me.Telefono1TextBox.Enabled = False
-        Me.Telefono1TextBox.Location = New System.Drawing.Point(7, 81)
-        Me.Telefono1TextBox.Name = "Telefono1TextBox"
-        Me.Telefono1TextBox.Size = New System.Drawing.Size(100, 22)
-        Me.Telefono1TextBox.TabIndex = 25
+        Me.TextBox1.Location = New System.Drawing.Point(128, 50)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.TabIndex = 28
         '
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(25, 109)
+        Me.Button6.Location = New System.Drawing.Point(141, 94)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(64, 23)
         Me.Button6.TabIndex = 0
         Me.Button6.Text = "Buscar"
         Me.Button6.UseVisualStyleBackColor = True
+        '
+        'IdTextBox
+        '
+        Me.IdTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Id", True))
+        Me.IdTextBox.Location = New System.Drawing.Point(344, 11)
+        Me.IdTextBox.Name = "IdTextBox"
+        Me.IdTextBox.Size = New System.Drawing.Size(33, 22)
+        Me.IdTextBox.TabIndex = 29
         '
         'CreacionBindingSource2
         '
@@ -469,7 +445,7 @@ Partial Class Form8
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.WindowsApplication1.My.Resources.Resources.soft_pastel_purple_blue_wallpaper_preview
-        Me.ClientSize = New System.Drawing.Size(822, 457)
+        Me.ClientSize = New System.Drawing.Size(822, 506)
         Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.Label23)
@@ -490,7 +466,7 @@ Partial Class Form8
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BUSQUEDA DE PACIENTE"
         Me.panel1.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CreacionDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CreacionBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.VeterinariaDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
@@ -514,37 +490,35 @@ Partial Class Form8
     Private WithEvents button1 As System.Windows.Forms.Button
     Private WithEvents label1 As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents Button6 As System.Windows.Forms.Button
     Friend WithEvents VeterinariaDataSet As WindowsApplication1.VeterinariaDataSet
     Friend WithEvents CreacionBindingSource As System.Windows.Forms.BindingSource
     Friend WithEvents CreacionTableAdapter As WindowsApplication1.VeterinariaDataSetTableAdapters.CreacionTableAdapter
     Friend WithEvents TableAdapterManager As WindowsApplication1.VeterinariaDataSetTableAdapters.TableAdapterManager
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents CreacionBindingSource2 As System.Windows.Forms.BindingSource
     Friend WithEvents CreacionBindingSource1 As System.Windows.Forms.BindingSource
-    Friend WithEvents Telefono1TextBox As System.Windows.Forms.TextBox
-    Friend WithEvents NombreEncargadoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ApellidoEDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents NombreMascotaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ApellidoMDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TipoAnimalDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ColorDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents RazaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents GeneroDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents Telefono1DataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FechaNacimientoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents TotalDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents FechaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents RecetaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents AsuntoDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
-    Friend WithEvents ApellidoETextBox As System.Windows.Forms.TextBox
-    Friend WithEvents NombreMascotaTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents CheckBox3 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox2 As System.Windows.Forms.CheckBox
-    Friend WithEvents CheckBox1 As System.Windows.Forms.CheckBox
     Private WithEvents Label24 As System.Windows.Forms.Label
     Private WithEvents Label23 As System.Windows.Forms.Label
     Friend WithEvents Label22 As System.Windows.Forms.Label
     Friend WithEvents Label21 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents IdTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents CreacionDataGridView As System.Windows.Forms.DataGridView
+    Friend WithEvents DataGridViewTextBoxColumn1 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn2 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn3 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn4 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn5 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn6 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn7 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn8 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn9 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn10 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn11 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn12 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn13 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn14 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn15 As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents DataGridViewTextBoxColumn16 As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class

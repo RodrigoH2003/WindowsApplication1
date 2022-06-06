@@ -659,7 +659,7 @@ Partial Class Form5
         Me.RecetaTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Receta", True))
         Me.RecetaTextBox.Enabled = False
         Me.RecetaTextBox.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RecetaTextBox.Location = New System.Drawing.Point(96, 19)
+        Me.RecetaTextBox.Location = New System.Drawing.Point(96, 106)
         Me.RecetaTextBox.Multiline = True
         Me.RecetaTextBox.Name = "RecetaTextBox"
         Me.RecetaTextBox.Size = New System.Drawing.Size(302, 79)
@@ -670,7 +670,7 @@ Partial Class Form5
         Me.AsuntoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.CreacionBindingSource, "Asunto", True))
         Me.AsuntoTextBox.Enabled = False
         Me.AsuntoTextBox.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.AsuntoTextBox.Location = New System.Drawing.Point(96, 102)
+        Me.AsuntoTextBox.Location = New System.Drawing.Point(96, 17)
         Me.AsuntoTextBox.Margin = New System.Windows.Forms.Padding(5)
         Me.AsuntoTextBox.Multiline = True
         Me.AsuntoTextBox.Name = "AsuntoTextBox"

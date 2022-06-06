@@ -26,21 +26,15 @@
     End Sub
 
     Private Sub button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button2.Click
-        Me.UsuariosTableAdapter.Edit(IdTextBox.Text, NombreTextBox.Text, UsuarioTextBox.Text, NivelTextBox.Text, PasswordTextBox.Text, IdTextBox.Text)
+        MsgBox("Datos Editados", vbOKOnly + vbInformation, "Exito")
+        Me.UsuariosTableAdapter.ingresar(NombreTextBox.Text, ApellidoTextBox.Text, UsuarioTextBox.Text, PasswordTextBox.Text, NivelTextBox.Text)
         Me.UsuariosTableAdapter.Fill(Me.VeterinariaDataSet.usuarios)
-        UsuariosDataGridView.Enabled = False
-    End Sub
 
-    Private Sub button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        UsuariosDataGridView.Enabled = True
     End Sub
 
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick
         Me.Label22.Text = DateTime.Now.ToShortTimeString
         Me.Label21.Text = DateTime.Now.ToLongDateString
     End Sub
+
 End Class

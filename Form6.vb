@@ -26,4 +26,41 @@
         Me.Label22.Text = DateTime.Now.ToShortTimeString
         Me.Label21.Text = DateTime.Now.ToLongDateString
     End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim SAVE As New SaveFileDialog
+        Dim ruta As String
+        Dim xlapp As Object = CreateObject("Excel.Application")
+        Dim pth As String = ""
+
+        Dim xlwb As Object = xlapp.Workbooks.add
+        Dim xlws As Object = xlwb.worksheets(1)
+        Try
+
+            For c As Integer = 0 To CreacionDataGridView.ColumnCount - 1
+                xlws.cells(1, c + 1).value = CreacionDataGridView.Columns(c).HeaderText
+            Next
+
+            For r As Integer = 0 To CreacionDataGridView.RowCount - 1
+                For c As Integer = 0 To CreacionDataGridView.Columns.Count - 1
+                    xlws.cells(r + 2, c + 1).value = Convert.ToString(CreacionDataGridView.Item(c, r).Value)
+                Next
+            Next
+
+            Dim SaveFileDialog1 As SaveFileDialog = New SaveFileDialog
+            SaveFileDialog1.InitialDirectory = System.Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)
+            SaveFileDialog1.Filter = "Archivo Excel| *.xlsx"
+            SaveFileDialog1.FilterIndex = 2
+            If SaveFileDialog1.ShowDialog = DialogResult.OK Then
+                ruta = SaveFileDialog1.FileName
+                xlwb.saveas(ruta)
+                xlws = Nothing
+                xlwb = Nothing
+                xlapp.quit()
+                MsgBox("Exportado Correctamente", MsgBoxStyle.Information)
+            End If
+        Catch ex As Exception
+
+        End Try
+    End Sub
 End Class

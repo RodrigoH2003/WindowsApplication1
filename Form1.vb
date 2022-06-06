@@ -40,4 +40,24 @@
         UsuarioTextBox.Text = ""
         PasswordTextBox.Text = ""
     End Sub
+
+    Private Sub UsuarioTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles UsuarioTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            PasswordTextBox.Focus()
+        End If
+    End Sub
+
+    Private Sub UsuarioTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles UsuarioTextBox.TextChanged
+
+    End Sub
+
+    Private Sub PasswordTextBox_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles PasswordTextBox.KeyPress
+        If Asc(e.KeyChar) = 13 Then
+            button3.Focus()
+        End If
+    End Sub
+
+    Private Sub PasswordTextBox_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PasswordTextBox.TextChanged
+    
+    End Sub
 End Class

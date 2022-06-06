@@ -67,6 +67,7 @@ Partial Class Form1
         '
         Me.button4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.button4.Font = New System.Drawing.Font("Times New Roman", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.button4.ForeColor = System.Drawing.Color.Maroon
         Me.button4.Location = New System.Drawing.Point(219, 359)
         Me.button4.Name = "button4"
         Me.button4.Size = New System.Drawing.Size(75, 23)

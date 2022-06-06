@@ -28,7 +28,6 @@ Partial Class Form3
         Dim UsuarioLabel As System.Windows.Forms.Label
         Dim PasswordLabel As System.Windows.Forms.Label
         Dim NivelLabel As System.Windows.Forms.Label
-        Me.label12 = New System.Windows.Forms.Label()
         Me.label11 = New System.Windows.Forms.Label()
         Me.label10 = New System.Windows.Forms.Label()
         Me.label9 = New System.Windows.Forms.Label()
@@ -39,7 +38,6 @@ Partial Class Form3
         Me.label5 = New System.Windows.Forms.Label()
         Me.label1 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.button7 = New System.Windows.Forms.Button()
         Me.button6 = New System.Windows.Forms.Button()
         Me.button5 = New System.Windows.Forms.Button()
         Me.button4 = New System.Windows.Forms.Button()
@@ -131,23 +129,12 @@ Partial Class Form3
         NivelLabel.TabIndex = 55
         NivelLabel.Text = "Nivel:"
         '
-        'label12
-        '
-        Me.label12.AutoSize = True
-        Me.label12.BackColor = System.Drawing.Color.Transparent
-        Me.label12.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label12.Location = New System.Drawing.Point(72, 517)
-        Me.label12.Name = "label12"
-        Me.label12.Size = New System.Drawing.Size(47, 15)
-        Me.label12.TabIndex = 47
-        Me.label12.Text = "Buscar"
-        '
         'label11
         '
         Me.label11.AutoSize = True
         Me.label11.BackColor = System.Drawing.Color.Transparent
         Me.label11.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label11.Location = New System.Drawing.Point(188, 516)
+        Me.label11.Location = New System.Drawing.Point(117, 524)
         Me.label11.Name = "label11"
         Me.label11.Size = New System.Drawing.Size(53, 15)
         Me.label11.TabIndex = 46
@@ -158,7 +145,7 @@ Partial Class Form3
         Me.label10.AutoSize = True
         Me.label10.BackColor = System.Drawing.Color.Transparent
         Me.label10.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label10.Location = New System.Drawing.Point(314, 517)
+        Me.label10.Location = New System.Drawing.Point(243, 525)
         Me.label10.Name = "label10"
         Me.label10.Size = New System.Drawing.Size(57, 15)
         Me.label10.TabIndex = 45
@@ -169,7 +156,7 @@ Partial Class Form3
         Me.label9.AutoSize = True
         Me.label9.BackColor = System.Drawing.Color.Transparent
         Me.label9.Font = New System.Drawing.Font("Times New Roman", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label9.Location = New System.Drawing.Point(451, 513)
+        Me.label9.Location = New System.Drawing.Point(380, 521)
         Me.label9.Name = "label9"
         Me.label9.Size = New System.Drawing.Size(35, 15)
         Me.label9.TabIndex = 44
@@ -251,22 +238,12 @@ Partial Class Form3
         Me.CheckBox1.TabIndex = 48
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
-        'button7
-        '
-        Me.button7.BackColor = System.Drawing.SystemColors.Window
-        Me.button7.Image = Global.WindowsApplication1.My.Resources.Resources.lupa
-        Me.button7.Location = New System.Drawing.Point(53, 438)
-        Me.button7.Name = "button7"
-        Me.button7.Size = New System.Drawing.Size(77, 75)
-        Me.button7.TabIndex = 32
-        Me.button7.UseVisualStyleBackColor = False
-        '
         'button6
         '
         Me.button6.BackColor = System.Drawing.SystemColors.Window
         Me.button6.Enabled = False
         Me.button6.Image = Global.WindowsApplication1.My.Resources.Resources.guardar_el_archivo
-        Me.button6.Location = New System.Drawing.Point(175, 438)
+        Me.button6.Location = New System.Drawing.Point(104, 446)
         Me.button6.Name = "button6"
         Me.button6.Size = New System.Drawing.Size(77, 75)
         Me.button6.TabIndex = 31
@@ -277,7 +254,7 @@ Partial Class Form3
         Me.button5.BackColor = System.Drawing.SystemColors.Window
         Me.button5.Enabled = False
         Me.button5.Image = Global.WindowsApplication1.My.Resources.Resources.cancelar
-        Me.button5.Location = New System.Drawing.Point(298, 438)
+        Me.button5.Location = New System.Drawing.Point(227, 446)
         Me.button5.Name = "button5"
         Me.button5.Size = New System.Drawing.Size(84, 75)
         Me.button5.TabIndex = 30
@@ -287,7 +264,7 @@ Partial Class Form3
         '
         Me.button4.BackColor = System.Drawing.SystemColors.Window
         Me.button4.Image = Global.WindowsApplication1.My.Resources.Resources.cerrar_sesion
-        Me.button4.Location = New System.Drawing.Point(428, 439)
+        Me.button4.Location = New System.Drawing.Point(357, 447)
         Me.button4.Name = "button4"
         Me.button4.Size = New System.Drawing.Size(83, 71)
         Me.button4.TabIndex = 29
@@ -474,7 +451,6 @@ Partial Class Form3
         Me.Controls.Add(NombreLabel)
         Me.Controls.Add(Me.NombreTextBox)
         Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.label12)
         Me.Controls.Add(Me.label11)
         Me.Controls.Add(Me.label10)
         Me.Controls.Add(Me.label9)
@@ -483,7 +459,6 @@ Partial Class Form3
         Me.Controls.Add(Me.label6)
         Me.Controls.Add(Me.textBox4)
         Me.Controls.Add(Me.label5)
-        Me.Controls.Add(Me.button7)
         Me.Controls.Add(Me.button6)
         Me.Controls.Add(Me.button5)
         Me.Controls.Add(Me.button4)
@@ -502,7 +477,6 @@ Partial Class Form3
         Me.PerformLayout()
 
     End Sub
-    Private WithEvents label12 As System.Windows.Forms.Label
     Private WithEvents label11 As System.Windows.Forms.Label
     Private WithEvents label10 As System.Windows.Forms.Label
     Private WithEvents label9 As System.Windows.Forms.Label
@@ -511,7 +485,6 @@ Partial Class Form3
     Private WithEvents label6 As System.Windows.Forms.Label
     Private WithEvents textBox4 As System.Windows.Forms.TextBox
     Private WithEvents label5 As System.Windows.Forms.Label
-    Private WithEvents button7 As System.Windows.Forms.Button
     Private WithEvents button6 As System.Windows.Forms.Button
     Private WithEvents button5 As System.Windows.Forms.Button
     Private WithEvents button4 As System.Windows.Forms.Button

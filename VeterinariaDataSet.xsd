@@ -103,7 +103,7 @@ WHERE        (Id = ?)</CommandText>
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="VeterinariaConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Edit" Modifier="Public" Name="Edit" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="Edit">
+              <DbSource ConnectionRef="VeterinariaConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="Edit" Modifier="Public" Name="Edit" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="Edit">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE       usuarios
@@ -120,7 +120,7 @@ WHERE        (Id = ?)</CommandText>
                   </DbCommand>
                 </UpdateCommand>
               </DbSource>
-              <DbSource ConnectionRef="VeterinariaConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ingresar" Modifier="Public" Name="ingresar" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ingresar">
+              <DbSource ConnectionRef="VeterinariaConnectionString (MySettings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ingresar" Modifier="Public" Name="ingresar" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="ingresar">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO usuarios
@@ -431,7 +431,7 @@ VALUES        (?, ?, ?, ?, ?)</CommandText>
   <xs:element name="VeterinariaDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="VeterinariaDataSet" msprop:Generator_UserDSName="VeterinariaDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="usuarios" msprop:Generator_TableClassName="usuariosDataTable" msprop:Generator_TableVarName="tableusuarios" msprop:Generator_TablePropName="usuarios" msprop:Generator_RowDeletingName="usuariosRowDeleting" msprop:Generator_RowChangingName="usuariosRowChanging" msprop:Generator_RowEvHandlerName="usuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="usuariosRowDeleted" msprop:Generator_UserTableName="usuarios" msprop:Generator_RowChangedName="usuariosRowChanged" msprop:Generator_RowEvArgName="usuariosRowChangeEvent" msprop:Generator_RowClassName="usuariosRow">
+        <xs:element name="usuarios" msprop:Generator_TableClassName="usuariosDataTable" msprop:Generator_TableVarName="tableusuarios" msprop:Generator_RowChangedName="usuariosRowChanged" msprop:Generator_TablePropName="usuarios" msprop:Generator_RowDeletingName="usuariosRowDeleting" msprop:Generator_RowChangingName="usuariosRowChanging" msprop:Generator_RowEvHandlerName="usuariosRowChangeEventHandler" msprop:Generator_RowDeletedName="usuariosRowDeleted" msprop:Generator_RowClassName="usuariosRow" msprop:Generator_UserTableName="usuarios" msprop:Generator_RowEvArgName="usuariosRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -473,7 +473,7 @@ VALUES        (?, ?, ?, ?, ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Creacion" msprop:Generator_TableClassName="CreacionDataTable" msprop:Generator_TableVarName="tableCreacion" msprop:Generator_TablePropName="Creacion" msprop:Generator_RowDeletingName="CreacionRowDeleting" msprop:Generator_RowChangingName="CreacionRowChanging" msprop:Generator_RowEvHandlerName="CreacionRowChangeEventHandler" msprop:Generator_RowDeletedName="CreacionRowDeleted" msprop:Generator_UserTableName="Creacion" msprop:Generator_RowChangedName="CreacionRowChanged" msprop:Generator_RowEvArgName="CreacionRowChangeEvent" msprop:Generator_RowClassName="CreacionRow">
+        <xs:element name="Creacion" msprop:Generator_TableClassName="CreacionDataTable" msprop:Generator_TableVarName="tableCreacion" msprop:Generator_RowChangedName="CreacionRowChanged" msprop:Generator_TablePropName="Creacion" msprop:Generator_RowDeletingName="CreacionRowDeleting" msprop:Generator_RowChangingName="CreacionRowChanging" msprop:Generator_RowEvHandlerName="CreacionRowChangeEventHandler" msprop:Generator_RowDeletedName="CreacionRowDeleted" msprop:Generator_RowClassName="CreacionRow" msprop:Generator_UserTableName="Creacion" msprop:Generator_RowEvArgName="CreacionRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="NombreEncargado" msprop:Generator_ColumnVarNameInTable="columnNombreEncargado" msprop:Generator_ColumnPropNameInRow="NombreEncargado" msprop:Generator_ColumnPropNameInTable="NombreEncargadoColumn" msprop:Generator_UserColumnName="NombreEncargado" minOccurs="0">
@@ -561,7 +561,7 @@ VALUES        (?, ?, ?, ?, ?)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Motivo" msprop:Generator_TableClassName="MotivoDataTable" msprop:Generator_TableVarName="tableMotivo" msprop:Generator_RowChangedName="MotivoRowChanged" msprop:Generator_TablePropName="Motivo" msprop:Generator_RowDeletingName="MotivoRowDeleting" msprop:Generator_RowChangingName="MotivoRowChanging" msprop:Generator_RowEvHandlerName="MotivoRowChangeEventHandler" msprop:Generator_RowDeletedName="MotivoRowDeleted" msprop:Generator_RowClassName="MotivoRow" msprop:Generator_UserTableName="Motivo" msprop:Generator_RowEvArgName="MotivoRowChangeEvent">
+        <xs:element name="Motivo" msprop:Generator_TableClassName="MotivoDataTable" msprop:Generator_TableVarName="tableMotivo" msprop:Generator_TablePropName="Motivo" msprop:Generator_RowDeletingName="MotivoRowDeleting" msprop:Generator_RowChangingName="MotivoRowChanging" msprop:Generator_RowEvHandlerName="MotivoRowChangeEventHandler" msprop:Generator_RowDeletedName="MotivoRowDeleted" msprop:Generator_UserTableName="Motivo" msprop:Generator_RowChangedName="MotivoRowChanged" msprop:Generator_RowEvArgName="MotivoRowChangeEvent" msprop:Generator_RowClassName="MotivoRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
